@@ -1,7 +1,7 @@
 import { createApp } from 'vue';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
-
+import 'bootstrap';
 import {
   Field, Form, ErrorMessage, defineRule, configure,
 } from 'vee-validate';
