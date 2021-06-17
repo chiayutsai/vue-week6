@@ -1,8 +1,8 @@
 <template>
   <div class="navbar" :class="{ 'navbar-bg': scrollDown }">
-     <router-link class="logo" :to="`/RingRing/shop`">RingRing</router-link>
+     <router-link class="logo" :to="`/shop`">RingRing</router-link>
     <div class="navbar-nav">
-       <router-link class="me-5" :to="`/RingRing/cart`">
+       <router-link class="me-5" :to="`/cart`">
         <span class="material-icons text-2xl"> shopping_cart </span>
       </router-link >
       <div class="navbar-toggle"  @click="openNav" ref="toggle">

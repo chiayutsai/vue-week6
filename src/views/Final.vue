@@ -7,11 +7,11 @@
       <p class="text-center text-2xl mb-6">感謝您的購買</p>
       <p class="text-center mb-6">下列為您的訂單資訊</p>
       <div class="d-flex w-40 mx-auto">
-        <router-link :to="`/RingRing`" class="w-50 btn btn-outline-info shadow-sm me-6"
+        <router-link :to="`/home`" class="w-50 btn btn-outline-info shadow-sm me-6"
           >前往首頁</router-link
         >
         <router-link
-          :to="`/RingRing/shop`"
+          :to="`/shop`"
           href="index.html"
           class="w-50 btn btn-secondary shadow-sm text-white secondary-hover"
           >前往商店</router-link

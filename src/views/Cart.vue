@@ -10,7 +10,7 @@
     <div v-if="cart.length <= 0" class="p-4 border border-white border-bottom-0 bg-table text-dark">
       <p class="text-center text-xl mb-6">購物車目前沒有商品</p>
       <div class="d-block w-25 mx-auto btn btn-secondary text-white secondary-hover mb-5">
-        <router-link class="white-hover" :to="`/RingRing`"> 前往商店</router-link>
+        <router-link class="white-hover" :to="`/shop`"> 前往商店</router-link>
       </div>
     </div>
     <div v-else>
@@ -83,7 +83,7 @@
 
         <div class="d-flex align-items-center">
           <p class="text-dark text-xl me-5">總計：NT${{ final_total }}</p>
-          <router-link  :to="`/RingRing/shop`" class="btn btn-dark">繼續購物</router-link>
+          <router-link  :to="`/shop`" class="btn btn-dark">繼續購物</router-link>
         </div>
       </div>
     </div>
@@ -279,7 +279,7 @@ export default {
         alert('購物車是空的，快去新增商品吧');
         return;
       }
-      this.$router.push('/RingRing/checkout');
+      this.$router.push('/checkout');
     },
     getRandom() {
       const ran = Math.floor(Math.random() * (this.allProduct.length));

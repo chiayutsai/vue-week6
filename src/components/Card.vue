@@ -5,7 +5,7 @@
       :class="{ 'card-img-rotate': !cartCard, 'card-small-img': cartCard }"
       @mouseover="changeImg"
       @mouseleave="recoveryImg"
-      :to="`/RingRing/product/${product.id}`"
+      :to="`/product/${product.id}`"
     >
       <img :src="product.imageUrl" :class="{ 'show-card-img': showFirstImg }" alt=""/>
       <img
@@ -18,7 +18,7 @@
     <div class="card-body">
       <h2 class="card-title mb-2">
         <router-link
-          :to="`/RingRing/product/${product.id}`"
+          :to="`/product/${product.id}`"
           :class="{ 'text-dark ': cartCard, 'text-base': cartCard }"
           >{{ product.title }}</router-link
         >

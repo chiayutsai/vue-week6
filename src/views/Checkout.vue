@@ -3,7 +3,7 @@
     <Progress step="2" />
   </div>
   <div class="container mt-15 mb-17">
-    <router-link class="d-inline-flex align-items-center mb-4" :to="`/RingRing/cart`"
+    <router-link class="d-inline-flex align-items-center mb-4" :to="`/cart`"
       ><span class="material-icons me-3"> reply </span> 返回購物車</router-link
     >
     <div class="row row-cols-2 gx-5">
