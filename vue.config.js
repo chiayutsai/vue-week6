@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: '/ringring/dist/',
+  publicPath: '/vue-week6/dist/',
 };
