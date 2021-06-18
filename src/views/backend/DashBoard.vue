@@ -11,6 +11,7 @@
               >新增產品</router-link
             >
             <router-link :to="`/dashboard/order`" class="p-4 dashboard-link">訂單列表</router-link>
+              <router-link :to="`/dashboard/coupons`" class="p-4 dashboard-link">優惠券</router-link>
           </ul>
         </div>
         <div class="col-9 ">

@@ -12,32 +12,32 @@
     <div class="navbar-collapse" ref="navbar">
       <ul>
         <li class="nav-item">
-          <a href="" class="nav-link">
+          <router-link :to="`/home`" class="nav-link" @click="changePage">
             <p class="nav-number">01</p>
             <p class="nav-title">Home</p>
             <p class="nav-title-ch">首頁</p>
-          </a>
+          </router-link>
         </li>
         <li class="nav-item">
-          <a href="" class="nav-link">
+          <router-link :to="`/shop`" class="nav-link" @click="changePage">
             <p class="nav-number">02</p>
             <p class="nav-title">Products</p>
             <p class="nav-title-ch">產品</p>
-          </a>
+          </router-link>
         </li>
         <li class="nav-item">
-          <a href="" class="nav-link">
+          <router-link :to="`/about`" class="nav-link" @click="changePage">
             <p class="nav-number">03</p>
             <p class="nav-title">About</p>
             <p class="nav-title-ch">關於<span class="font-design">RingRing</span></p>
-          </a>
+          </router-link>
         </li>
         <li class="nav-item">
-          <a href="" class="nav-link">
+          <router-link :to="`/contact`" class="nav-link" @click="changePage">
             <p class="nav-number">04</p>
             <p class="nav-title">Contact</p>
             <p class="nav-title-ch">聯絡<span class="font-design">RingRing</span></p>
-          </a>
+          </router-link>
         </li>
       </ul>
     </div>
@@ -58,6 +58,10 @@ export default {
     openNav() {
       this.$refs.toggle.classList.toggle('open');
       this.$refs.navbar.classList.toggle('open');
+    },
+    changePage() {
+      this.$refs.toggle.classList.remove('open');
+      this.$refs.navbar.classList.remove('open');
     },
     handleScroll() {
       if (window.scrollY > 200) {

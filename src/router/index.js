@@ -13,6 +13,16 @@ const routes = [
         component: () => import('../views/Home.vue'),
       },
       {
+        path: 'about',
+        name: 'about',
+        component: () => import('../views/About.vue'),
+      },
+      {
+        path: 'contact',
+        name: 'contact',
+        component: () => import('../views/Contact.vue'),
+      },
+      {
         path: 'shop',
         name: 'shop',
         component: () => import('../views/Shop.vue'),
@@ -47,29 +57,38 @@ const routes = [
   {
     path: '/login',
     name: 'login',
-    component: () => import('../views/Login.vue'),
+    component: () => import('../views/backend/Login.vue'),
   },
   {
     path: '/dashboard',
     name: 'dashboard',
-    component: () => import('../views/DashBoard.vue'),
+    component: () => import('../views/backend/DashBoard.vue'),
     children: [
       {
         path: 'newProduct',
         name: 'newProduct',
-        component: () => import('../views/NewProduct.vue'),
+        component: () => import('../views/backend/NewProduct.vue'),
       },
       {
         path: 'admin',
         name: 'admin',
-        component: () => import('../views/Admin.vue'),
+        component: () => import('../views/backend/Admin.vue'),
       },
       {
         path: 'order',
         name: 'order',
-        component: () => import('../views/Order.vue'),
+        component: () => import('../views/backend/Order.vue'),
+      },
+      {
+        path: 'coupons',
+        name: 'coupons',
+        component: () => import('../views/backend/Coupons.vue'),
       },
     ],
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    component: () => import(/* webpackChunkName: "about" */ '../views/NotFound.vue'),
   },
 ];
 

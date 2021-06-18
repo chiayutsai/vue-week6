@@ -141,6 +141,7 @@ export default {
             this.getRelativeProduct();
           } else {
             alert(res.data.message);
+            this.$router.push('/shop');
           }
         })
         .catch((err) => {

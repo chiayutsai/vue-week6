@@ -1,3 +1,3 @@
 <template>
-  關於我們
+  聯絡我們
 </template>
